@@ -19,7 +19,7 @@ __extract_zip__: Function used to extract zip code from address string column.
 
 __ntx_county__: List of 8 North Texas counties surrounding Dallas County as a quick reference.
 
-## In development
+## Upcoming Additions
 
 __distil Theme__
 
