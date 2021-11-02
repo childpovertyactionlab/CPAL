@@ -1,13 +1,13 @@
 # CPAL
 Package of custom R functions used by the Child Poverty Action Lab
 
-##Theme Functions
+## Theme Functions
 
 __cpal_palette__
 
 __theme_cpal__
 
-##GIS Functions
+## GIS Functions
 
 __GeoIntersect__
 
