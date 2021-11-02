@@ -22,5 +22,7 @@ __ntx_county__: List of 8 North Texas counties surrounding Dallas County as a qu
 ## In development
 
 __distil Theme__
+
 __bookdown Theme__
+
 __reactable Theme__
