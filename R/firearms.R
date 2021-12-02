@@ -1,9 +1,10 @@
-#### List of available firearm types in NIBRS Incidents #####
-firearms <- c("Handgun",
-              "Firearm (Type Not Stated)",
-              "Assault Weapon",
-              "Unknown Type Gun",
-              "Rifle",
-              "Other/Unknown Gun",
-              "Shotgun",
-              "Other Gun")
+#' List of firearms used in Dallas Police Department Police Incidents data.
+#'
+#' A dataset containing eight firearm types
+#'
+#' @format A data frame with 8 rows and 1 variables:
+#' \describe{
+#'   \item{firearm}{a gun type}
+#'   ...
+#' }
+"firearms"

@@ -1,10 +1,10 @@
-#### List of North Texas Counties Surrounding Dallas County #####
-ntx_county <- c("Dallas County",
-              "Collin County",
-              "Denton County",
-              "Tarrant County",
-              "Ellis County",
-              "Rockwall County",
-              "Kaufman County",
-              "Johnson County"
-              )
+#' List of North Texas counties surrounding Dallas County.
+#'
+#' A dataset containing eight county names
+#'
+#' @format A data frame with 8 rows and 1 variables:
+#' \describe{
+#'   \item{county}{a gun type}
+#'   ...
+#' }
+"ntx_county"

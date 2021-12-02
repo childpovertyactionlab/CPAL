@@ -7,6 +7,8 @@ __cpal_palette__: Contains a list of CPAL themed color palettes for graphics. Co
 
 __theme_cpal__: ggplot2 base theme for CPAL graphics.
 
+__bar_pos_neg__: Reactable function for a positive and negative bar chart.
+
 ## GIS Functions
 
 __GeoIntersect__: Intersects two sf geometries and computes area and percent of area intersect for estimating population variables.
