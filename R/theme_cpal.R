@@ -39,12 +39,12 @@ theme_cpal <- function(base_size = 36, base_family = "sans") {
         legend.direction = "horizontal",
         legend.title = element_blank(),
         legend.box = "horizontal",
-        panel.grid.major = element_line(colour = "#e1e1e1", linetype = "dotted", size = 0.25),
-        panel.grid.minor = element_blank(),
         plot.title = element_text(hjust = 0, size = rel(1.5), face = "bold"),
         #plot.margin = margin(c(1, 2, 1, 1), "lines"),
-        plot.margin = margin(t = 1, r = 2, b = 2, l = 1),
-        panel.border = element_rect(size=1, fill = NA),
+        plot.margin = margin(t = 2, r = 3, b = 3, l = 2),
+        panel.border = element_rect(size = 2, color = "#595959"),
+        panel.grid.major = element_line(colour = "#e1e1e1", linetype = "dotted", size = 1),
+        panel.grid.minor = element_blank(),
         strip.background = element_rect()
         )
     )
