@@ -13,7 +13,7 @@
 #'
 #' @examples
 #' test <- "test"
-#' @import tidycensus
+
 get_acs_years <- function(variables, years, geography, state, survey) {
   acs_df <- list()
 
