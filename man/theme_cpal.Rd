@@ -4,7 +4,7 @@
 \alias{theme_cpal}
 \title{CPAL ggplot theme}
 \usage{
-theme_cpal(base_size = 36, base_family = "sans")
+theme_cpal(base_size = 48, base_family = "sans")
 }
 \arguments{
 \item{base_size}{text size for chart theme}

@@ -3,8 +3,6 @@ Package of custom R functions used by the Child Poverty Action Lab
 
 ## Theme Functions
 
-__cpal_palette__: Contains a list of CPAL themed color palettes for graphics. Contains Categorical, sequential, and diverging palettes.
-
 __theme_cpal__: ggplot2 base theme for CPAL graphics.
 
 __bar_pos_neg__: Reactable function for a positive and negative bar chart.

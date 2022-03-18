@@ -1,6 +1,6 @@
 Package: CPALtools
 Title: Custom Package for the Child Poverty Action Lab
-Version: 1.2.0
+Version: 1.2.2
 Authors@R: 
     person("Michael", "Lopez", , "michael@childpovertyactionlab.org", role = c("aut", "cre"))
 Description: This package contains a set of functions for internal use by the Child Poverty Action Lab to ease theming of graphics and gis analysis. 
