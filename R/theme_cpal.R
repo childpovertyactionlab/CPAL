@@ -45,7 +45,15 @@ theme_cpal <- function(base_size = 48, base_family = "sans") {
         panel.border = element_rect(size = 1, color = "#595959"),
         panel.grid.major = element_line(colour = "#595959", linetype = "dotted", size = 0.25),
         panel.grid.minor = element_blank(),
-        strip.background = element_rect()
+        strip.background = element_rect(),
+        legend.key.width = unit(0.5, units = "in"),
+        plot.caption = element_text(size = 36, face = "italic"),
+        legend.spacing = unit(0, "in"),
+        legend.key.height = unit(0.25, "in"),
+        legend.spacing.x = unit(0.1, "in"),
+        legend.justification = "center",
+        legend.margin=margin(4,4,4,4),
+        legend.box.spacing = margin(0.5)
       )
   )
 }
