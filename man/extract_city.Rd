@@ -4,17 +4,14 @@
 \alias{extract_city}
 \title{Extract city name from an address string}
 \usage{
-extract_city(x)
+extract_city(field = NULL)
 }
 \arguments{
-\item{x}{column name containing an address string}
+\item{field}{column name containing an address string}
 }
 \value{
 A column that should only contain the city name from an address string
 }
 \description{
 Extract city name from an address string
-}
-\examples{
-test <- "test"
 }

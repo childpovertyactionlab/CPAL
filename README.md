@@ -1,42 +1,37 @@
-## CPALtools
-__CPALtools__ is an R package containing custom functions used by the Child Poverty Action Lab across its work streams.
+# cpaltools
 
-Install from github with the following command:
+**NOTE:** This project is still under active development.
 
-```r devtools::install_github("childpovertyactionlab/CPALtools")```
+`library(cpaltools)` contains R based functions for and templates for managing analysis workflows at the Urban Institute. It heavily relies on functions and functionality from the [tidyverse](https://www.tidyverse.org/).
 
-### Theme Functions
+## Installation
 
-__theme_cpal__: ggplot2 base theme for CPAL graphics.
+You can install the latest version of `cpaltools` from GitHub:
 
-__font_cpal__: Used to install Poppins font from Google for use with ggplot2.
+```         
+# install.packages("devtools")
+devtools::install_github("childpovertyactionlab/cpaltools")
+```
 
-__bar_pos_neg__: Reactable function for a positive and negative bar chart.
+## Usage
 
-### GIS Functions
+`library(cpaltools)` contains three families of functions:
 
-__GeoIntersect__: Intersects two sf geometries and computes area and percent of area intersect for estimating population variables.
+`Geo*` functions related to geographic interactions within data that are not currently available within commonly used GIS packages such as `sf`.
 
-### Utility Functions
+`extract_*` utility functions focused on extracting specific pieces of information from a string.
 
-__extract_city__: Function used to extract city name from address string column. Not fully accurate and still being developed.
+`get_*` loop functions related to downloading multiple years of data from various api's such as `tidycensus`
 
-__extract_zip__: Function used to extract zip code from address string column.
+### Geo* functions
 
-### Data and Objects
+  - `GeoIntersect()` Similar to the summarize within functionality within ArcGIS. Compares fields between two geography types and generates estimates between them.
 
-__acs_variables__: Object containing the name of American Community Survey variables commonly used as metrics in CPAL analysis.
+### extract_* functions
 
-__cpal_leaflet__: Leaflet map style attribution.
+  - `extract_zip()` Extracts the 5 digit zip code from a string address.
+  - `extract_city()` Extracts a city name from a string address.
 
-__cpal_mapbox__: CPAL mapbox style link.
+### get_* functions
 
-__dpd_vgc__: List of incident types used to identify Violent Gun Crime at the Dallas Police Department.
-
-__ntx_county__: List of the eight North Texas counties surrounding Dallas County.
-
-__pal_cpalfac__: Hex color codes to CPAL standards for factor variables. Includes ten hex codes.
-
-__pal_cpaldiv__: Hex color codes to CPAL standards for diverging scale graphics.
-
-__pal_cpaltri__: Hex color codes to CPAL standards for three variables.
+  - `get_acs_years()` Pulls multiple years of data from the census api through `tidycensus` for specified fields, geographies, and years.

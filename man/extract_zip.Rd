@@ -4,17 +4,14 @@
 \alias{extract_zip}
 \title{Extract zip code from an address string}
 \usage{
-extract_zip(x)
+extract_zip(field = NULL)
 }
 \arguments{
-\item{x}{column name containing an address string}
+\item{field}{column name containing an address string}
 }
 \value{
 A column that should only contain the zip code from an address string
 }
 \description{
 Extract zip code from an address string
-}
-\examples{
-test <- "test"
 }

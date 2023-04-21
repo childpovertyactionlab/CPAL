@@ -1,27 +1,21 @@
-Package: CPALtools
+Package: cpaltools
+Type: Package
 Title: Custom Package for the Child Poverty Action Lab
-Version: 1.2.2
+Version: 2.0.0
 Authors@R: 
     person("Michael", "Lopez", , "michael@childpovertyactionlab.org", role = c("aut", "cre"))
-Description: This package contains a set of functions for internal use by the Child Poverty Action Lab to ease theming of graphics and gis analysis. 
-License: MIT + file LICENSE
+Description: This package contains a set of functions for internal use in analysis by the Child Poverty Action Lab.
+Depends: R (>= 3.4.0)
+Imports:
+  tidyverse,
+  sf,
+  tigris
+Suggests: 
+  knitr
+License: GPL-3
+URL: https://github.com/childpovertyactionlab/cpaltools
+BugReports: https://github.com/childpovertyactionlab/cpaltools/issues
 Encoding: UTF-8
 LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
-Imports:
-  stringr,
-  dplyr,
-  tibble,
-  ggplot2,
-  magrittr,
-  ggthemes,
-  sf,
-  tigris,
-  showtext,
-  sysfonts,
-  fBasics,
-  grDevices,
-  reactable
-Depends: 
-    R (>= 2.10)
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr

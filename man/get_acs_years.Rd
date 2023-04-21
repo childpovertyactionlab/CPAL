@@ -4,7 +4,13 @@
 \alias{get_acs_years}
 \title{Pull ACS Census data for multiple years across the same geographies and combine into a single dataframe.}
 \usage{
-get_acs_years(variables, years, geography, state, survey)
+get_acs_years(
+  variables = NULL,
+  years = NULL,
+  geography = NULL,
+  state = NULL,
+  survey = NULL
+)
 }
 \arguments{
 \item{variables}{Character string or vector of character strings of variable IDs. tidycensus automatically returns the estimate and the margin of error associated with the variable.}
@@ -22,7 +28,4 @@ A dataframe containing all identified census variables for the specified years.
 }
 \description{
 Pull ACS Census data for multiple years across the same geographies and combine into a single dataframe.
-}
-\examples{
-test <- "test"
 }

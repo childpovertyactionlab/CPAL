@@ -4,12 +4,12 @@
 \alias{GeoIntersect}
 \title{Intersection of two sf geographies used to summarize variables between each}
 \usage{
-GeoIntersect(x, y)
+GeoIntersect(polylg = NULL, polysm = NULL)
 }
 \arguments{
-\item{x}{The larger sf geography that can be summarized down into a smaller geography}
+\item{polylg}{The larger sf geography that can be summarized down into a smaller geography}
 
-\item{y}{The smaller sf geography that can be summarized up into a larger geography}
+\item{polysm}{The smaller sf geography that can be summarized up into a larger geography}
 }
 \value{
 An sf dataframe that has been intersected between both geographies and now contains the calculated area of all geographies
@@ -17,17 +17,4 @@ and the percentage of intersection for the small and large geographies.
 }
 \description{
 Intersection of two sf geographies used to summarize variables between each
-}
-\examples{
-TexasCD <- tigris::congressional_districts(state = "TX")
-plot(TexasCD["geometry"])
-
-DallasCounty <- tigris::county_subdivisions(state = "TX", county = "Dallas County")
-plot(DallasCounty["geometry"])
-
-DallasCD <- TexasCD[DallasCounty, ]
-
-DallasInt <- GeoIntersect(x = DallasCounty, y = DallasCD)
-
-plot(DallasInt["geometry"])
 }

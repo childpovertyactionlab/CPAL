@@ -10,24 +10,25 @@
 #'
 #' @return A dataframe containing all identified census variables for the specified years.
 #' @export
-#'
-#' @examples
-#' test <- "test"
 
-get_acs_years <- function(variables, years, geography, state, survey) {
+get_acs_years <- function(variables = NULL,
+                          years = NULL,
+                          geography = NULL,
+                          state = NULL,
+                          survey = NULL) {
   acs_df <- list()
 
   for(i in 1:nrow(years)) {
     year_pull <- years$value[i]
 
-    acs_pull <- get_acs(geography = geography,
+    acs_pull <- tidycensus::get_acs(geography = geography,
                           state = state,
                           variables = variables,
                           year = years,
                           survey = survey,
                           output = "wide",
                           geometry = FALSE) %>%
-      mutate(Year = year_pull)
+      dplyr::mutate(Year = year_pull)
 
     acs_df[[i+1]] <- acs_pull
   }
