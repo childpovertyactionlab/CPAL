@@ -9,6 +9,7 @@
 #' @import tidyverse
 #' @import httr
 #' @import jsonlite
+#' @import sf
 #' @md
 #' @export
 
